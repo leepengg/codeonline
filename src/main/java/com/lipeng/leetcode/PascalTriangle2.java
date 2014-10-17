@@ -3,7 +3,7 @@ package com.lipeng.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PascalTriangle {
+public class PascalTriangle2 {
 	public List<List<Integer>> generate(int numRows) {
 		List<List<Integer>> ret = new ArrayList<List<Integer>>();
 
@@ -52,15 +52,15 @@ public class PascalTriangle {
 		return ret;
 	}
 
-	public List<Integer> getRow(int rowIndex) {
-		return generate(rowIndex + 1).get(rowIndex);
-	}
-
-	public static void printRet(List<Integer> ret) {
+	public static void printRet(List<List<Integer>> ret) {
 		System.out.println(ret.size());
-		for (Integer integer : ret) {
-			System.out.print(integer);
-			System.out.print(" ");
+		for (List<Integer> list : ret) {
+			System.out.println();
+			for (Integer integer : list) {
+				System.out.print(integer);
+				System.out.print(" ");
+			}
+
 		}
 
 	}
@@ -69,8 +69,8 @@ public class PascalTriangle {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		PascalTriangle pt = new PascalTriangle();
-		printRet(pt.getRow(3));
+		PascalTriangle2 pt = new PascalTriangle2();
+		printRet(pt.generate(5));
 
 	}
 
