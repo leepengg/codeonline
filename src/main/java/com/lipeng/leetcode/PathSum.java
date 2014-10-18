@@ -3,6 +3,10 @@ package com.lipeng.leetcode;
 public class PathSum {
 
 	private static int sumForNow = 0;
+	
+	public PathSum(){
+		sumForNow = 0;
+	}
 
 	public boolean hasPathSum(TreeNode root, int sum) {
 		if (root == null) {
@@ -11,9 +15,9 @@ public class PathSum {
 
 		sumForNow += root.val;
 
-		if (sumForNow > sum) {
-			return false;
-		}
+//		if (sumForNow > sum) {
+//			return false;
+//		}
 
 		if (sumForNow == sum && root.left == null && root.right == null) {
 			return true;
