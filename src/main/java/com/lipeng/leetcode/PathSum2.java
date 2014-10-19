@@ -5,11 +5,7 @@ import java.util.List;
 
 public class PathSum2 {
 
-	private static int sumForNow = 0;
-	
-	public PathSum2(){
-		sumForNow = 0;
-	}
+	private  int sumForNow = 0;
 
 	public boolean hasPathSum(TreeNode root, int sum,  List<List<Integer>> ret, List<Integer> q) {
 		if (root == null) {
