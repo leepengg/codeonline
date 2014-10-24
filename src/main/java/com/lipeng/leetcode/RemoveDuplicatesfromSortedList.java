@@ -1,3 +1,5 @@
+package com.lipeng.leetcode;
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -9,7 +11,7 @@
  *     }
  * }
  */
-public class Solution {
+public class RemoveDuplicatesfromSortedList {
     public ListNode deleteDuplicates(ListNode head) {
         if(head == null){
             return null;

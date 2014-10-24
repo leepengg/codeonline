@@ -1,3 +1,5 @@
+package com.lipeng.leetcode;
+
 public class MergeSortedArray {
     public void merge(int A[], int m, int B[], int n) {
         int [] C = new int[m];

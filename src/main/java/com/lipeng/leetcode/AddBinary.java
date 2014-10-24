@@ -1,3 +1,5 @@
+package com.lipeng.leetcode;
+
 public class AddBinary {
     public String addBinary(String a, String b) {
         if(a == null || b == null){

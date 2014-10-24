@@ -1,4 +1,6 @@
-public class Solution {
+package com.lipeng.leetcode;
+
+public class RemoveElement {
     public int removeElement(int[] A, int elem) {
         if(A == null || A.length == 0){
             return 0;
