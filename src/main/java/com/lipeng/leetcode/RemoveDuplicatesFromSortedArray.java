@@ -1,4 +1,6 @@
-public class Solution {
+package com.lipeng.leetcode;
+
+public class RemoveDuplicatesFromSortedArray {
     public int removeDuplicates(int[] A) {
         if(A == null || A.length == 0){
             return 0;
@@ -12,12 +14,12 @@ public class Solution {
             }
             return 2;
         }
-        
+
         int len = A.length;
         int ret = A.length;
         int i = 0;
         int j = 1;
-        
+
         while(j < len){
             if(A[i] == A[j]){
                 A[i] = A[j++];
@@ -29,8 +31,8 @@ public class Solution {
                 j++;
             }
         }
-        
+
         return i+1;
-        
+
     }
 }
