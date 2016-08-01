@@ -1,4 +1,6 @@
-public class Solution {
+import java.util.HashSet;
+
+public class ValidSudoku {
     public boolean isValidSudoku(char[][] board) {
         if(board == null){
             return false;

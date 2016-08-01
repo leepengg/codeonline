@@ -1,4 +1,10 @@
-public class Solution {
+package com.lipeng.leetcode;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ZigZagConversion {
     public String convert(String s, int nRows) {
         if(s == null){
             return null;

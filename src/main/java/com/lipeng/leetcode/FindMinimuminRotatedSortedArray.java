@@ -1,4 +1,4 @@
-public class Solution {
+public class FindMinimuminRotatedSortedArray {
     
     public int findMin(int[] num) {
         int begin = 0;

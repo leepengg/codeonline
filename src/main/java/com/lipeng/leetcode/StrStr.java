@@ -1,4 +1,7 @@
-public class Solution {
+package com.lipeng.leetcode;
+
+
+public class StrStr {
     public String strStr(String haystack, String needle) {
         if(haystack == null || needle == null){
             return null;
